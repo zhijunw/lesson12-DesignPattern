@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="百度首页">
+    <meta name="keyword" content="百度首页">
+    <title>百度首页</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- 头部 -->
+        <div class="head">
+            <!-- 头部导航 -->
+            <div class="head-nav">
+                <!-- 左边 -->
+                <div class="left-nav">
+                    <!-- 天气 -->
+                    <div class="weather">
+                        <span>广州:</span>
+                        <span class="iconfont icon-weather-copy"></span>
+                        <span>14℃</span>
+                        <span class="great">优</span>
+                        <span class="point">16</span>
+                    </div>
+                    <!-- 换肤 -->
+                    <div class="changeskin">
+                        <a href="">宝箱</a>
+                        <a href="####" class="js-open">换肤</a>
+                        <a href="">消息</a>
+                    </div>
+                </div>
+                <!-- 换肤 -->
+                <div class="webcgskin-warp" id="cgskin">
+                    <div class="webcgskin">
+                        <div class="webcgskin-menu" id="js-cgskin">
+                            <ul>
+                                <li class="menu-select"><span>热门</span></li>
+                                <li><span>游戏</span></li>
+                                <li><span>卡通</span></li>
+                                <li><span>明星</span></li>
+                                <li><span>风景</span></li>
+                                <li><span>简约</span> </li>
+                                <li><span>小清新</span></li>
+                            </ul>
+                            <div class="setskin">
+                                <div class="close-setskin">
+                                    <span class="close-setskin-pic"></span>
+                                    <span>不使用换肤功能</span>
+                                </div>
+                                <div class="cgopacity">
+                                    背景透明度
+                                    <input type="range" name="opacity" min="1%" max="100%" id="opacity" value="50"><span id="number"></span>
+                                </div>
+                                <div class="closeskin js-close">
+                                    <span class="closeskin-icon"></span>
+                                    <span>收起</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-warper">
+                        <div class="webcgskin-content">
+                            <div class="webcgskin-pic" id="js-webmenu">
+                                <ul id="changeskin">
+                                    <li class="pic-pos1 js-pic">
+                                        <img src="image/35.jpg" class="big-pic ">
+                                        <p class="skin-text text-big">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos2 js-pic">
+                                        <img src="image/36.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos3 js-pic">
+                                        <img src="image/37.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos4 js-pic">
+                                        <img src="image/38.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos5 js-pic">
+                                        <img src="image/39.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos6 js-pic">
+                                        <img src="image/40.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos7 js-pic">
+                                        <img src="image/41.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos8 js-pic">
+                                        <img src="image/42.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos9 js-pic">
+                                        <img src="image/43.jpg" class="big-pic">
+                                        <p class="skin-text text-big">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos10 js-pic">
+                                        <img src="image/44.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos11 js-pic">
+                                        <img src="image/45.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                    <li class="pic-pos12 js-pic">
+                                        <img src="image/46.jpg" class="s-pic">
+                                        <p class="skin-text text-small">摄影：漫威映画</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="webckshin-preview">
+                                <div class="preview-pic">
+                                    <img src="image/50.jpg" class="js-preview">
+                                </div>
+                                <p class="preview-title">背景皮肤预览</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右边 -->
+                <div class="right-nav">
+                    <a href="">糯米</a>
+                    <a href="">新闻</a>
+                    <a href="">hao123</a>
+                    <a href="">地图</a>
+                    <a href="">视频</a>
+                    <a href="">贴吧</a>
+                    <a href="">登录</a>
+                    <a href="" class="setup">
+                        <span>设置</span>
+                    </a>
+                    <a href="" class="more"><span>更多产品</span></a>
+                    <div class="submenu">
+                        <span class="arrow"></span>
+                        <div>
+                            <a href="">探索设置</a>
+                            <a href="">高级探索</a>
+                            <a href="">关闭预测</a>
+                            <a href="">探索历史</a>
+                        </div>
+                    </div>
+                    <div class="submore">
+                        <div class="moreproduction">更多产品</div>
+                        <div class="more-pic">
+                            <a href="">
+                                <img src="image/music.png">音乐
+                            </a>
+                            <a href=""><img src="image/zhidao.png">知道</a>
+                            <a href=""><img src="image/wenku.png">文库</a>
+                            <a href=""><img src="image/image1.png">图片</a>
+                            <a href=""><img src="image/bang.png">风云榜</a>
+                            <a href=""><img src="image/tuiguang.png">推广</a>
+                        </div>
+                        <div class="allproduction"><a href="">全部产品>></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="head-search" id="changenav">
+                <div class="main-top">
+                    <i class="main-top-pic"></i>
+                </div>
+                <!-- 表单区域 -->
+                <div class="txt">
+                    <form action="" method="post">
+                        <span class="txt-span">
+                    <a href="">
+                    <i class="txt-pic1"></i>
+                    </a>
+                    <a href="">
+                    <i class="txt-pic2"></i>
+                    </a>
+                    <input type="text" name="search" value="" class="txt-search" />
+                    </span>
+                        <input type="submit" name="submit" value="百度一下" class="txt-btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 内容 -->
+        <div class="main-warpper">
+            <div class="main" id="main">
+                <!-- 导航 -->
+                <div class="main-nav" id="main-nav">
+                    <ul id="menu-list">
+                        <li class="select" id="fc">
+                            <a href="javascript:;">
+                                <i class="iconfont icon-renwu"></i>我的关注</a>
+                        </li>
+                        <li id="tj"><a href="javascript:;">推荐</a></li>
+                        <li id="nav"><a href="javascript:;">导航</a></li>
+                        <li id="video"><a href="javascript:;">视频</a></li>
+                    </ul>
+                    <div class="addsetup">
+                        <span class="add-click" id="add-click">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="setup-menu" id="setup-menu">
+                    <div class="setup-left">
+                        <h3>已订阅频道</h3>
+                        <ul id="deleteL">
+                            <li class="dashed" data-id="fc">
+                                <i class="delete"></i>
+                                <span>我的关注</span>
+                            </li>
+                            <li class="dashed" data-id="tj">
+                                <i class="delete"></i>
+                                <span>推荐</span>
+                            </li>
+                            <li class="dashed" data-id="nav">
+                                <i class="delete"></i>
+                                <span>导航</span>
+                            <li class="dashed" data-id="video">
+                                <i class="delete"></i>
+                                <span>视频</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="setup-right">
+                        
+                         <h3>未订阅频道</h3>
+                        <ul id="addR">
+                            <li class="solid" data-id="5">
+                                <i class="add"></i>
+                                <span>体育</span>
+                            </li>
+                            <li class="solid" data-id="6">
+                                <i class="add"></i>
+                                <span>小说</span>
+                            </li>
+                            <li class="solid" data-id="7">
+                                <i class="add"></i>
+                                <span>音乐</span>
+                            </li>
+                           
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- 左边 -->
+                <div class="main-content">
+                    <!-- 热点 -->
+                    <div class="hot" id="hot">
+                        <div class="hot-title">
+                            <a href="" class="hotthing">实时热点</a>
+                            <a href="" class="change">换一换</a>
+                        </div>
+                        <div class="hot-menu">
+                            <ul>
+                                <li><a href="">韩军再曝性侵丑闻</a></li>
+                                <li><a href="">校长量体温摸女生</a></li>
+                                <li><a href="">火锅店6人被拘</a></li>
+                                <li><a href="">制片人陈佩华病逝</a></li>
+                                <li><a href="">黄磊三胎儿子出生</a></li>
+                                <li><a href="">贝儿新造型惹人爱</a></li>
+                                <li><a href="">韩军再曝性侵丑闻</a></li>
+                                <li><a href="">校长量体温摸女生</a></li>
+                                <li><a href="">火锅店6人被拘</a></li>
+                                <li><a href="">制片人陈佩华病逝</a></li>
+                                <li><a href="">黄磊三胎儿子出生</a></li>
+                                <li><a href="">贝儿新造型惹人爱</a></li>
+                                <li><a href="">火锅店6人被拘</a></li>
+                                <li><a href="">制片人陈佩华病逝</a></li>
+                                <li><a href="">黄磊三胎儿子出生</a></li>
+                                <li><a href="">贝儿新造型惹人爱</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="contentAll">
+                    <div class="content-left">
+                         <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-left hidden">
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/12.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/11.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-left hidden">
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/13.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/13.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/13.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/13.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/13.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/13.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="content-left hidden">
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/14.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/14.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/14.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/14.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/14.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                        <div class="sections">
+                            <!-- logo -->
+                            <div class="sections-logo">
+                                <a href="">
+                                    <img src="image/14.png">
+                                </a>
+                            </div>
+                            <div class="sections-detail">
+                                <h2><a href="">全国购房压力出炉 来看看你的城市买房需要几年</a></h2>
+                                <span><a href=""> 中国青年网 </a></span>
+                                <span>05-26 08:41</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="foot">
+            <div class="returntop">
+                <div class="returntop-warp">
+                    <div class="returntop-text">回到顶部</div>
+                    <i class="returntop-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/index1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1002 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.head {
+    width: 100%;
+}
+
+.head .head-nav {
+    height: 32px;
+    width: 100%;
+    min-width: 1100px;
+    background: #9c9fb2;
+    position: relative;
+}
+
+.head-nav .left-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 15px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.head-nav .weather {
+    display: inline-block;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.head-nav .weather>span {
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.head-nav .weather .great {
+    color: #38f;
+    font-weight: bold;
+}
+
+.head-nav .weather .great .point {
+    border-right: 1px solid #fff;
+}
+
+.head-nav .changeskin {
+    display: inline-block;
+}
+
+.head-nav .changeskin a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline;
+    margin-right: 20px;
+    display: inherit;
+}
+
+
+/*换肤*/
+
+.webcgskin-warp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    background: #fff;
+}
+
+#cgskin {
+    display: none;
+}
+
+.webcgskin-menu {
+    height: 46px;
+}
+
+.webcgskin-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.webcgskin-menu ul {
+    float: left;
+}
+
+.webcgskin-menu ul li {
+    float: left;
+    list-style: none;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    /*        animation: demo 1s all;
+    -webkit-animation:demo 1s all;*/
+}
+
+.webcgskin-menu ul li:hover {
+    color: #fff;
+    background: #38f;
+}
+
+
+/*@-webkit-keyframes demo{
+0%{opacity: 0;}
+50%{opacity: 0.5;}
+100%{opacity: 1;}
+}*/
+
+.webcgskin-menu {
+    height: 46px;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.webcgskin {
+    border: 1px solid #aba2a2;
+}
+
+.webcgskin-menu .menu-select {
+    color: #fff;
+    background: #38f;
+}
+
+.webcgskin .setskin {
+    float: right;
+}
+
+.webcgskin .closeskin {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    cursor: default;
+}
+
+.webcgskin .cgopacity {
+    display: none;
+    position: relative;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    cursor: default;
+    margin-right: 35px;
+    color: #666;
+    font-size: 13px;
+    padding: 5px;
+}
+
+#opacity {
+    width: 80px;
+}
+
+#number {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    outline: none
+}
+
+.webcgskin .close-setskin {
+    float: left;
+    display: none;
+    height: 46px;
+    line-height: 46px;
+    cursor: default;
+    margin-right: 35px;
+    color: #666;
+}
+
+.webcgskin .close-setskin:hover {
+    cursor: pointer;
+    color: #38f;
+}
+
+.webcgskin .close-setskin span {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.close-setskin .close-setskin-pic {
+    background: url(image/icon2.png) no-repeat -24px -176px;
+    width: 14px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.webcgskin .closeskin .closeskin-icon {
+    margin-right: 2px;
+    background: url(image/icon2.png) no-repeat -44px -175px;
+    width: 11px;
+    height: 15px;
+}
+
+.webcgskin .closeskin span {
+    display: inline-block;
+    font-size: 14px;
+    color: #38f;
+}
+
+.head .right-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 32px;
+    text-align: right;
+    width: 590px;
+}
+
+.webcgskin-warp .webcgskin-content {
+    position: relative;
+    height: 215px;
+    /*  padding: 25px 0 0 0;*/
+    width: 910px;
+    margin: 0 auto
+}
+
+.webcgskin-warp .content-warper {
+    position: relative;
+    top: 7px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #FFF;
+}
+
+.webcgskin-content .webcgskin-pic {
+    float: left;
+    width: 590px;
+    height: 180px;
+}
+
+.webcgskin-content .webckshin-preview {
+    float: right;
+    width: 295px;
+}
+
+.webckshin-preview .preview-pic {}
+
+.webckshin-preview .preview-title {
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.webckshin-preview img {
+    width: 264px;
+    height: 180px;
+}
+
+.right-nav>a {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.webcgskin-pic {
+    width: 590px;
+    height: 180px;
+}
+
+
+/**/
+
+.webcgskin-pic .pic-pos1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.webcgskin-pic .pic-pos2 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+.webcgskin-pic .pic-pos3 {
+    position: absolute;
+    top: 120px;
+    left: 98px;
+}
+
+.webcgskin-pic .pic-pos4 {
+    position: absolute;
+    top: 0;
+    left: 196px;
+}
+
+.webcgskin-pic .pic-pos5 {
+    position: absolute;
+    top: 60px;
+    left: 196px;
+}
+
+.webcgskin-pic .pic-pos6 {
+    position: absolute;
+    top: 120px;
+    left: 196px;
+}
+
+.webcgskin-pic .pic-pos7 {
+    position: absolute;
+    top: 0;
+    left: 294px;
+}
+
+.webcgskin-pic .pic-pos8 {
+    position: absolute;
+    top: 0;
+    left: 392px;
+}
+
+.webcgskin-pic .pic-pos9 {
+    position: absolute;
+    top: 60px;
+    left: 294px;
+}
+
+.webcgskin-pic .pic-pos10 {
+    position: absolute;
+    top: 0;
+    left: 490px;
+}
+
+.webcgskin-pic .pic-pos11 {
+    position: absolute;
+    top: 60px;
+    left: 490px;
+}
+
+.webcgskin-pic .pic-pos12 {
+    position: absolute;
+    top: 120px;
+    left: 490px;
+}
+
+
+/**/
+
+.webcgskin-pic .skin-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    filter: alpha(opacity=0) \9;
+    opacity: 0;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.webcgskin-pic .skin-text:hover {
+    opacity: 0.5;
+    background: #999;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.webcgskin-pic .text-big {
+    width: 195px;
+    height: 119px;
+    line-height: 119px;
+    text-align: center;
+}
+
+.webcgskin-pic .text-small {
+    height: 59px;
+    width: 97px;
+    line-height: 59px;
+}
+
+
+/**/
+
+.webcgskin-pic .big-pic {
+    width: 195px;
+    height: 119px;
+    line-height: 119px;
+}
+
+.webcgskin-pic .s-pic {
+    width: 97px;
+    height: 59px;
+    line-height: 59px;
+}
+
+
+/**/
+
+.head .right-nav .setup {
+    position: relative;
+}
+
+.head .right-nav .submenu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 83px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #e3e3e3;
+}
+
+.rigth-nav .setup:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background: #38f;
+}
+
+.submenu .arrow {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    border: 10px dashed transparent;
+    border-bottom: 10px solid #e3e3e3;
+}
+
+.right-nav .submore {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 86px;
+    overflow: hidden;
+    text-align: center;
+    background: #f9f9f9;
+    border-left: 1px solid #e7e7e7;
+}
+
+.right-nav .more:hover .submore {
+    display: block;
+}
+
+.head .right-nav .more {
+    width: 86px;
+    background: #38f;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+.right-nav .submore img {
+    display: block;
+    height: 36px;
+    width: auto;
+    margin: 10px auto 5px;
+}
+
+.right-nav .submore a {
+    display: block;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.right-nav .submore a:hover {
+    text-decoration: underline;
+}
+
+.submore .moreproduction {
+    height: 32px;
+    line-height: 32px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/*图片搜索*/
+
+.head-search .main-top {
+    text-align: center;
+}
+
+.head-search .main-top-pic {
+    display: block;
+    width: 270px;
+    height: 129px;
+    background: url(image/baidu1.png);
+    background-size: 270px 130px;
+    margin: 0 auto;
+}
+
+.head-search .main-top-pic2 {
+    display: block;
+    width: 270px;
+    height: 129px;
+    background: url(image/baidu3.png);
+    background-size: 270px 130px;
+    margin: 0 auto;
+}
+
+.head-search .txt {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.txt-span {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+}
+
+.txt .txt-pic1 {
+    background: url(image/1.png);
+    display: inline-block;
+    height: 16px;
+    width: 18px;
+    position: absolute;
+    top: 13px;
+    right: 6px;
+}
+
+.txt .txt-pic2 {
+    background: url(image/2.png);
+    display: inline-block;
+    width: 13px;
+    height: 18px;
+    position: absolute;
+    top: 13px;
+    right: 40px;
+    /* background-size: 18px 15px; */
+    background-size: 13px 18px;
+    /* background-position: 0 50%; */
+}
+
+.txt-search {
+    width: 540px;
+    height: 38px;
+    /*ie6,8*/
+    height: 28px\9;
+    /*ie9*/
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    /*ie6,8*/
+    padding-top: 10px\9;
+    /*ie9,这里只对IE9,IE10有影响，为什么实际上对IE8也有影响？
+  padding-bottom: 5px\9\0;*/
+}
+
+.txt-search:hover {
+    border-color: #888787;
+}
+
+.txt-search:focus {
+    border-color: #38f;
+}
+
+.txt-btn {
+    border: 0px;
+    width: 100px;
+    height: 42px;
+    background: #36F;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: -5px;
+    /*ie9*/
+    margin-bottom: 5px\9\0;
+    position: relative;
+    top: -1px;
+}
+
+.txt-btn:hover {
+    background: #38f;
+}
+
+
+/*s搜索框2*/
+
+.fixed-search {
+    position: fixed;
+    top: 0;
+    /* left: 50%; */
+    height: 50px;
+    min-height: 50px;
+    z-index: 20;
+    width: 100%;
+    padding: 10px 0;
+    /* margin-left: -43%; */
+    z-index: 90;
+    background: #fff;
+    margin: 0 auto;
+    /* margin: 0 auto; */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.9;
+}
+
+.fixed-search .main-top {
+    text-align: center;
+    display: inline-block;
+}
+
+.fixed-search .main-top-pic {
+    width: 101px;
+    height: 36px;
+    margin-right: 30px;
+    display: block;
+    background: url(image/baidu2.png);
+    background-size: 101px 36px;
+}
+
+.fixed-search .txt {
+    text-align: center;
+    display: inline-block
+}
+
+
+/*内容*/
+
+.main-warpper {
+    width: 100%;
+    min-width: 1100px;
+    margin-top: 50px;
+}
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.main .main-nav {
+    position: relative;
+    width: 900px;
+    height: 39px;
+    border: 1px solid #e9e9e9;
+     box-sizing: border-box;
+
+}
+
+.left-main {
+    width: 900px;
+    overflow: hidden;
+}
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    list-style: none;
+    text-align: center;
+    width: 80px
+}
+
+
+/*    添加设置    */
+
+.addsetup {
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/*   订阅频道    */
+
+.setup-menu {
+    display: none;
+    width: 900px;
+    text-align: left;
+    background: #fff;
+    padding: 20px 10px 0 10px;
+    height: 160px;
+    border: 1px solid #cdcdcd;
+    border-top: 0;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.setup-menu h3 {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.setup-menu .setup-left {
+    float: left;
+    width: 400px;
+}
+
+.setup-menu .setup-right {
+    float: right;
+    width: 400px;
+}
+
+.setup-menu li {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.setup-left .delete,
+.setup-left .add {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url(image/17.png) no-repeat;
+    background-position: -40px -25px;
+}
+
+.setup-right .add,
+.setup-right .delete {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background: url(image/17.png) no-repeat;
+    background-position: -60px -28px;
+}
+
+.setup-left .dashed,
+.setup-left .solid {
+    position: relative;
+    border: 1px dashed #cdcdcd;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.setup-left .dashed:hover,
+.setup-left .solid:hover {
+    border-color: #38f;
+}
+
+.setup-left .dashed:hover .delete,
+.setup-left .dashed:hover .add {
+    background-position: -21px -25px;
+}
+
+.setup-right .solid,
+.setup-right .dashed {
+    position: relative;
+    border: 1px solid #cdcdcd;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.setup-right .solid:hover,
+.setup-right .dashed:hover {
+    background: #38f;
+}
+
+.setup-right .solid:hover .add,
+.setup-right .solid:hover .delete {
+    background-position: -76px -28px;
+}
+
+.add-click {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(image/16.png) no-repeat;
+    background-position: -121px -49px;
+    /* vertical-align: middle; */
+    margin-top: 10px;
+}
+
+.add-click:hover {
+    background-position: -121px -73px;
+}
+
+.main-nav ul li:first-child {
+    width: 120px;
+}
+
+.main-nav ul li a {
+    display: initial;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+/*  热点   */
+
+.main-content {
+    position: relative;
+}
+
+.hot .hot-title {
+    width: 300px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.hot-title .hotthing {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+}
+
+.hot-title .change {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+}
+
+.main-content .hot {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 300px;
+    padding-top: 20px;
+}
+
+.hot ul {
+    text-align: left;
+}
+
+.hot ul li {
+    display: inline-block;
+    width: 140px;
+    margin-right: 5px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.hot ul li a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+.hot ul li a:hover {
+    text-decoration: underline;
+    color: #38f;
+}
+
+
+/*   内容    */
+
+.content-left {
+    width: 550px;
+}
+
+.hidden {
+    display: none;
+}
+
+.sections {
+    overflow: hidden;
+    height: 160px;
+    display: table;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.sections .sections-logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sections .sections-detail {
+    width: 344px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 20px
+}
+
+.sections-detail h2 {
+    font-size: 18px;
+}
+
+.sections-detail h2>a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sections-detail h2>a:hover {
+    text-decoration: none;
+    color: #38f;
+}
+
+.sections-detail span {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.sections-detail span>a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.main-nav .select {
+    background: #999;
+}
+
+#notice-con {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #f5f5f5;
+}
+
+.left-main .box img {
+    width: 160px;
+    height: auto;
+}
+
+.left-main .pin {
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.left-main .box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 5px;
+}
+
+.foot .returntop {
+    position: fixed;
+    left: 50%;
+    margin-left: 460px;
+    bottom: 50px;
+    text-align: center;
+    z-index: 2000;
+    background: #f7f7f7
+}
+
+.returntop .returntop-warp {
+    position: relative;
+    width: 45px;
+    height: 40px;
+    cursor: default;
+}
+
+.returntop .returntop-text {
+    display: none;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+.returntop-warp:hover .returntop-text {
+    display: block;
+}
+
+.returntop-warp:hover .returntop-icon {
+    display: none;
+}
+
+.returntop .returntop-icon {
+    background: url(image/icon1.png) no-repeat -1px -10px;
+    display: block;
+    width: 33px;
+    height: 17px;
+    position: absolute;
+    top: 10px;
+    left: 5px
+}
